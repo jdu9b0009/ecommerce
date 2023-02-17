@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tokyo Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+    <span class="title">
+        <img src="image/logo-suit.svg"/>
+        <h1>Tokyo Fashion</h1>
+    </span>  
+      <div class = "container">
+        <nav class = "navbar">
+          <button type = "button" class = "navbar-toggler">
+            <i class = "fas fa-bars"></i>
+          </button>
+          <div class = "navbar-collapse">
+            <ul>
+              <li class="active"><p id="ForMen">Men</p></li>
+              <li><p id="ForWomen">Women</p></li>
+              <li><p id="ForKids">Kids</p></li>
+            </ul>
+          </div>
+
+          <div class = "cart">
+            <button type = "button" id = "cart-btn">
+              <i class = "fas fa-shopping-cart"></i>
+              <span id = "cart-count-info"></span>
+            </button>
+            
+            <div class = "cart-container">
+              <div class = "cart-list">
+              </div>
+
+              <div class = "cart-total">
+                <h3>Total: $</h3>
+                <span id = "cart-total-value"></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+
+    <section class = "products">
+      <div class = "container">
+        <h2>Our Products</h2>
+        <main></main>
+        <div class = "product-list">
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class = "container">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+    
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About us</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact us</a>
+            </li>
+          </ul>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
